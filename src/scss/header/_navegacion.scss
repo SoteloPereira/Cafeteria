@@ -1,0 +1,42 @@
+//como esta fuera de la ruta actual, hay que indicar que va a buscar variables desde la carpeta "base"
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+//se importan operaciones matematicas de sass
+@use 'sass:math';
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    margin-top: v.$separacion;
+
+    a{
+        text-align: center;
+        color: v.$blanco;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        @include m.tablet {
+            margin:0;
+        }
+        &:hover{
+            color: v.$secundario;
+        }
+        &:active{
+            color: v.$secundario;
+        }
+        &.activo{
+            color: v.$secundario;
+        }
+    }
+
+    @include m.tablet {
+        flex-direction: row;
+        //div para dividir la separacion (5rem / 4)
+        gap: math.div(v.$separacion, 4);
+        margin: 0;
+    }
+
+    
+
+}

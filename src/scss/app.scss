@@ -1,0 +1,6 @@
+@use 'base'; //aqui se importa index que tiene las referencias de los archivos a compilar
+//como se llama index (esta dentro de base), no es necesario explicitarlo ya que lo busca por defecto
+@use 'header';
+@use 'inicio';
+@use 'galeria';
+@use 'internas';

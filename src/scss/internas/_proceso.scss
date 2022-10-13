@@ -1,0 +1,61 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-proceso{
+    position: relative;
+    padding: 5rem 5rem 0 ;    
+}
+
+.proceso{
+    margin-bottom: 2rem;
+
+    &:last-of-type{
+        margin-bottom: 0;
+        padding-bottom: 3rem;
+    }
+
+    @include m.tablet {
+        @include m.grid(2, 5rem);
+    }
+    .imagen, .texto{
+        flex: 1;
+    }
+    // cambiando orden de los elementos con la direccion
+    &:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    // al tener flex, a los hijos se les puede poner el orden como aparecen
+    &:nth-child(4){
+        .texto{
+            order: 1;
+            //podria indicarse como -1 asi se va solo al principio y al ser 2 elementos el otro queda directamente en el 2do posicion
+        }
+        .imagen{
+            order: 2;
+        }
+    }
+    // tambien se podria hacer escalable, seleccionando solo los pares
+    //&:nth-child(even){flex-direction: row-reverse; }
+    .texto{
+        margin-top: 1rem;
+        padding: 2rem;
+        h3{
+            margin: 0;
+            text-align: left;
+            color: v.$primario;
+            &:after{
+                content: '';
+                display: block;
+                width: 50%;
+                height: 2px;
+                background-color: v.$secundario;
+            }
+        }
+    }
+
+    @include m.tablet {
+        display:flex;
+        gap: v.$separacion;
+        align-items: center;
+    }
+}

@@ -1,0 +1,70 @@
+//como esta fuera de la ruta actual, hay que indicar que va a buscar variables desde la carpeta "base"
+@use 'base/variables' as v;
+//este codigo se incluirá en app.scss cuando se haga el gulp de la funcion default
+//es necesario exportar este codigo, y para ello se hace un @import o @use 'header/header' 
+//en archivo app.scss, y luego al compilarlo se debe ver en app.css de build
+
+//importar los mixins
+@use 'base/mixins' as m;
+
+//en SASS en vez de anidar los selectores .clase .otraClase{ } , colocamos el hijo dentro
+.header{
+    padding: 5rem 0 ;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //para utilizar un mixin se usa include
+    @include m.fuente;
+
+    //usar un mixin dinamico, que recibe un parametro para configurar el estilo, en este caso el background 
+    //@include m.bgColor(red);
+
+    //uso de mixins para usar los media queries, esta anidado dentro del selector
+    @include m.telefono {   //al compilar mostrará el mq con formato css
+        padding: 4rem ;
+    }
+    @include m.tablet{
+        padding: 3rem 0;
+        min-height: 70rem;
+    }
+    @include m.desktop{
+        padding: 2rem 0;
+    }
+
+    //se coloca el & para juntar el pseudo elemento con el padre, ya que si no se coloca el & quedará con un espacio como si fuera un hijo
+    &::before{
+        content: '';
+        background-color: v.$negro;
+        position: absolute;
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: .6;
+    }
+    .contenido-header{
+        margin-top: 5rem;
+        position: relative;
+        h1{
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 5rem;
+        }
+    }
+
+}
+
+//header para cada pagina
+.header-inicio{
+    //tenemos que considerar que esto se compilará, y cuando se lea la ruta, el archivo sera app.css en la carpeta css
+    //por lo que debemos salir una ruta atras y luego ingresar a la carpeta img y seleccionar la imagen
+    background-image: url(../img/header_inicio.jpg); 
+}
+
+.header-nosotros{
+    background-image: url(../img/header_nosotros.jpg);
+}
+.header-proceso{
+    background-image: url(../img/header_proceso.jpg);
+}

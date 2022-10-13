@@ -1,0 +1,46 @@
+//vamos a importar variables, para usar las fuentes, colores, etc
+@use 'variables' as v; //le ponemos un alias para no tener que escribir el nombre completo del archivo que importamos
+
+//definicion de globales para proyecto, usando variables (importadas)
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    //usamos el nombre del archivoImportado.variable
+    font-family: v.$fuenteSecundaria;
+    //teniendo el alias, podemos acortar la sintaxis, colocando el alias.variable
+    font-size: 1.6rem;
+    // para colocar el inicio sobrepuesto color blanco
+    background-color: v.$cafeClaro;
+}
+
+p{
+    color: v.$negro;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: v.$negro;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}

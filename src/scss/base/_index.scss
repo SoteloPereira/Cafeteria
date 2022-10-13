@@ -1,0 +1,9 @@
+@forward 'normalize';
+@forward 'variables';
+@forward 'globales';
+@forward 'utilidades';
+//servira como indice para los archivos que se van a importar y compilar posteriormente
+
+@forward 'tipografia';
+//@forward - nos va a servir para incluir archivos dentro de otros
+//@use y @import (lo mismo) los van a incluir y ademas usarán el contenido

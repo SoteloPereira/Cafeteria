@@ -1,0 +1,45 @@
+@use 'variables' as v;
+
+h1, h2, h3{
+    font-family: v.$fuentePrincipal;
+    margin: 0 0 v.$separacion;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+    color: v.$primario;
+    span{
+        font-size: 1.8rem;
+        color: v.$secundario;
+        // para hacer el salto de linea con el texto de heading
+        display: block;
+    }
+    &::after{
+        content: '';
+        // Para que se vea el elemento se deben usar estas 4 propiedades
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        // hasta aqui
+        margin: 0 auto;
+        background-image: url(../img/cafe.svg);
+        background-repeat: no-repeat;
+        background-size: 10rem;
+    }
+}
+h3{
+    font-size: 3.2rem;
+}
+// para seccion menu, donde encabezado es blanco
+.heading-blanco{
+    @extend h2; //hereda todo lo de h2
+    color: v.$blanco;
+    span{
+        color: v.$blanco;
+    }
+}

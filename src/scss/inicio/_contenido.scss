@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+// en archivo globales, en body se le dio fondo cafeclaro para contrastar el blanco
+.contenido-principal{
+    background-color: v.$blanco;
+    padding: 5rem 2rem;
+    // se debe importar mixins para usar el shorthand
+    @include m.tablet {
+        padding: 10rem 5rem;
+        margin-top: -10rem;
+        position: relative;
+    }
+   
+}

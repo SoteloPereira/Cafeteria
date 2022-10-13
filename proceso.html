@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@0;1&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cafeteria | SASS</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header header-proceso">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="logo cafeteria">
+                </div>
+
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a class="activo" href="proceso.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="texto-header">
+                <h1>Los verdaderos expertos del café</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor contenido-proceso bg-blanco margin-negativo-10">
+        <div class="proceso">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/proceso_1.avif" type="img/avif">
+                    <source srcset="build/img/proceso_1.webp" type="img/webp">
+                    <img loading="lazy" src="build/img/proceso_1.jpg" alt="imagenJPG">
+                </picture>
+            </div>
+            <div class="texto">
+                <h3>Granos de café</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis pariatur doloremque minus asperiores eveniet amet ullam enim saepe itaque possimus expedita, iusto rerum temporibus modi facere voluptatum voluptates doloribus?</p>
+            </div>
+        </div>
+        <div class="proceso ">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/proceso_2.avif" type="img/avif">
+                    <source srcset="build/img/proceso_2.webp" type="img/webp">
+                    <img loading="lazy" src="build/img/proceso_2.jpg" alt="imagenJPG">
+                </picture>
+            </div>
+            <div class="texto">
+                <h3>Tostar el café</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis pariatur doloremque minus asperiores eveniet amet ullam enim saepe itaque possimus expedita, iusto rerum temporibus modi facere voluptatum voluptates doloribus?</p>
+            </div>
+        </div>
+        <div class="proceso">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/proceso_3.avif" type="img/avif">
+                    <source srcset="build/img/proceso_3.webp" type="img/webp">
+                    <img loading="lazy" src="build/img/proceso_3.jpg" alt="imagenJPG">
+                </picture>
+            </div>
+            <div class="texto">
+                <h3>Empacar el café</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis pariatur doloremque minus asperiores eveniet amet ullam enim saepe itaque possimus expedita, iusto rerum temporibus modi facere voluptatum voluptates doloribus?</p>
+            </div>
+        </div>
+        <div class="proceso">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/proceso_4.avif" type="img/avif">
+                    <source srcset="build/img/proceso_4.webp" type="img/webp">
+                    <img loading="lazy" src="build/img/proceso_4.jpg" alt="imagenJPG">
+                </picture>
+            </div>
+            <div class="texto">
+                <h3>Moler granos de café</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis pariatur doloremque minus asperiores eveniet amet ullam enim saepe itaque possimus expedita, iusto rerum temporibus modi facere voluptatum voluptates doloribus?</p>
+            </div>
+        </div>
+        <div class="proceso bg-blanco">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/proceso_5.avif" type="img/avif">
+                    <source srcset="build/img/proceso_5.webp" type="img/webp">
+                    <img loading="lazy" src="build/img/proceso_5.jpg" alt="imagenJPG">
+                </picture>
+            </div>
+            <div class="texto">
+                <h3>Disfruta una taza de café</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis pariatur doloremque minus asperiores eveniet amet ullam enim saepe itaque possimus expedita, iusto rerum temporibus modi facere voluptatum voluptates doloribus?</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenido-footer contenedor bg-blanco">
+            <div class="ubicacion footer-div">
+                <h3>Ubicación</h3>
+                <p>Santa Eulalia 11162</p>
+                <p>La Florida, Santiago</p>
+            </div>
+            <div class="reservacion footer-div">
+                <h3>reservación</h3>
+                <p>Tel. 78254399</p>
+                <a href="tel:+56972348999">Llamar</a>
+            </div>
+            <div class="horario footer-div">
+                <h3>horario</h3>
+                <p>Lun - Jue: 11:00 - 22:00</p>
+                <p>Vie - Sab: 09:00 - 23:30</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+        </div>
+        <p class="copyright">TODOS LOS DERECHOS RESERVADOS ©️</p>
+    </footer>
+</body>
+</html>

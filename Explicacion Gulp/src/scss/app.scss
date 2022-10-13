@@ -1,0 +1,17 @@
+// Este es el archivo con los estilas 
+@use 'header/header';
+@use 'header/navegacion';
+
+$color: #818181;
+
+//se utilizan las variables tal como se definen ($color)
+body{
+    background-color: $color;
+}
+h1{
+    font-weight: 100;
+    color: red;
+}
+
+// no tendra explicito la configuracion de header y navegacion ya que solo las importa y luego 
+// cuando compila se las pasa a app.css

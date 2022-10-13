@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.iconos{
+    margin-top: 2rem;
+    
+    .listado-iconos{
+      
+        @include m.tablet {
+            // se puede llamar un mixin dentro de otro asi:
+             @include m.grid(3, 5rem);
+            // se le puede pasar la cant columnas y la medida de separacion
+            
+            // otra forma en vez de grid, con flex y la separacion
+            //display: flex;
+            //justify-content: space-evenly;
+        }
+        li{
+            img{
+                margin: 3rem auto 0;
+                width: 12rem;
+            }
+            p{
+                font-size: 3rem;
+                color: v.$primario;
+                font-family: v.$fuenteCursiva;
+                margin: 0;
+            }
+        }
+    }
+}

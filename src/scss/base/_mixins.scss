@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+
+@mixin fuente {
+    color: black;
+    font-size: 2rem;
+}
+
+//se le puede configurar valores dinamicamente, recibiendo un parametro y usandolo en la propiedad
+
+@mixin bgColor ($color) {
+    background-color: $color;
+}
+
+//configurar mixin para media queries
+@mixin telefono {
+    @media (min-width: v.$telefono){
+        //para que todo el contenido que le pasemos al mixin desde donde es llamado (_header.scss)
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: v.$tablet){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: v.$desktop){
+        @content;
+    }
+}
+// un mixin dinamico para crear un grid con x cantidad de columnas
+@mixin grid ($columnas,$separacion) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $separacion;
+    // las propiedades de arriba van fijas, y el content para que se le puedan agregar mas
+    @content;
+}

@@ -1,0 +1,12 @@
+
+//este codigo se incluirá en app.scss cuando se haga el gulp de la funcion default
+//es necesario exportar este codigo, y para ello se hace un @import o @use 'header/header' 
+//en archivo app.scss, y luego al compilarlo se debe ver en app.css de build
+.header{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+p{
+    color: green;
+}

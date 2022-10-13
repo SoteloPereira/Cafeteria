@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+p {
+  color: green;
+}
+
+.nav {
+  background-color: red;
+}
+
+body {
+  background-color: #818181;
+}
+
+h1 {
+  font-weight: 100;
+  color: red;
+}

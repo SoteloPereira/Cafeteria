@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@0;1&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cafeteria | SASS</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header header-nosotros">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="logo cafeteria">
+                </div>
+
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a class="activo" href="nosotros.html">Nosotros</a>
+                    <a href="proceso.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="texto-header">
+                <h1>Una nueva experiencia cada día</h1>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor contenido-principal">
+        <h2><span>Conoce más</span> sobre nosotros</h2>
+        <div class="contenedor contenido-nosotros">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/nosotros_sidebar.avif" type="img/avif">
+                    <source srcset="build/img/nosotros_sidebar.webp" type="img/webp">
+                    <img loading="lazy" src="build/img/nosotros_sidebar.jpg" alt="imagenJPG">
+                </picture>
+            </div>
+
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, voluptatem suscipit saepe obcaecati reiciendis veritatis autem tenetur molestias repellat? Aliquid doloribus optio voluptatibus sunt ipsum laboriosam rem a deleniti nihil!</p>
+                <blockquote>Excelente Sabor!</blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptate sequi laudantium voluptas nemo minima hic? Doloremque vel sit accusantium quasi, rem placeat ex eligendi recusandae architecto magnam quo maiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quidem accusantium! Odio quaerat, eius aperiam est pariatur impedit incidunt rem voluptatem quos quidem porro aut dolor assumenda ducimus, corrupti blanditiis!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenido-footer contenedor bg-blanco">
+            <div class="ubicacion footer-div">
+                <h3>Ubicación</h3>
+                <p>Santa Eulalia 11162</p>
+                <p>La Florida, Santiago</p>
+            </div>
+            <div class="reservacion footer-div">
+                <h3>reservación</h3>
+                <p>Tel. 78254399</p>
+                <a href="tel:+56972348999">Llamar</a>
+            </div>
+            <div class="horario footer-div">
+                <h3>horario</h3>
+                <p>Lun - Jue: 11:00 - 22:00</p>
+                <p>Vie - Sab: 09:00 - 23:30</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+        </div>
+        <p class="copyright">TODOS LOS DERECHOS RESERVADOS ©️</p>
+    </footer>
+</body>
+</html>

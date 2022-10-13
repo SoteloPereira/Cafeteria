@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@0;1&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cafeteria | SASS</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header header-inicio">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="logo cafeteria">
+                </div>
+
+                <nav class="navegacion">
+                    <a class="activo" href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="proceso.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="texto-header">
+                <h1>Disfruta de una deliciosa taza de café</h1>
+            </div>
+        </div>
+    </header>
+<!-- usamos la utilidad text-center, para centrar todo el contenido del main -->
+    <main class="contenedor contenido-principal text-center">
+        <section class="conoce">
+            <h2><span>conoce más </span>sobre nosotros</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores reiciendis quibusdam quod dolorem iure quas quam accusantium! Debitis, beatae a ab iste magnam ipsum, facere recusandae consectetur earum sunt excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde adipisci ipsum, commodi pariatur iure cumque, dolore ab nostrum sit et voluptates eius iste consequuntur natus aliquid modi a accusamus.</p>
+        </section>
+        <section class="iconos">
+            <ul class="listado-iconos">
+                <li>
+                    <img src="build/img/icono_cafe.svg" alt="iconoCafe">
+                    <p>Café</p>
+                </li>
+                <li>
+                    <img src="build/img/icono_postre.svg" alt="iconoPostre">
+                    <p>Postre</p>
+                </li>
+                <li>
+                    <img src="build/img/icono_te.svg" alt="iconoCafe">
+                    <p>Té</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <section class="contenedor galeria">
+        <h2><span>vive la </span>experiencia</h2>
+        <div class="contenedor galeria-grid">
+            <img src="build/img/galeria/galeria_01.jpg" alt="">
+            <img src="build/img/galeria/galeria_02.jpg" alt="">
+            <img src="build/img/galeria/galeria_03.jpg" alt="">
+            <img src="build/img/galeria/galeria_04.jpg" alt="">
+            <img src="build/img/galeria/galeria_05.jpg" alt="">
+            <img src="build/img/galeria/galeria_06.jpg" alt="">
+            <img src="build/img/galeria/galeria_07.jpg" alt="">
+            <img src="build/img/galeria/galeria_08.jpg" alt="">
+            <img src="build/img/galeria/galeria_09.jpg" alt="">
+            <img src="build/img/galeria/galeria_10.jpg" alt="">
+        </div>
+    </section>
+    <section class="menu">
+        <h2 class="heading-blanco"><span>nuestro delicioso</span> Menú</h2>
+            <div class="hoja-menu menu-grid">
+                <section class="detalle-menu primera-hoja">
+                    <h3>Café</h3>
+                    <ul>
+                        <li>
+                            <p>Café Latte <span>Café Espresso con leche caliente evaporada</span> </p>
+                            <p class="precio">$25</p>
+                        </li>
+                        <li>
+                            <p>Café Mocha <span>Espresso con crema batida</span> </p>
+                            <p class="precio">$30</p>
+                        </li>
+                        <li>
+                            <p>Café Americano <span>Café Negro</span> </p>
+                            <p class="precio">$30</p>
+                        </li>
+                        <li>
+                            <p>Capuccino<span>Espresso con una capa suave de espuma</span> </p>
+                            <p class="precio">$25</p>
+                        </li>
+                        <li>
+                            <p>Café Mocha Frio<span>Espresso, dulce con mocha y leche.</span> </p>
+                            <p class="precio">$29</p>
+                        </li>
+                        <li>
+                            <p>Mocha Frio Quemado<span>Espresso, hielo, con azucar quemada y mantequilla.</span> </p>
+                            <p class="precio">$35</p>
+                        </li>
+                        <li>
+                            <p>Latte con Caramelo<span>Espresso, leche y caramelo.</span> </p>
+                            <p class="precio">$39</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="detalle-menu segunda-hoja">
+                    <h3>Comida</h3>
+                    <ul>
+                        <li>
+                            <p>Baguette de Pollo <span>Delicioso Baguette con pollo a la plancha</span> </p>
+                            <p class="precio">$45</p>
+                        </li>
+                        <li>
+                            <p>Baguette Pollo y Queso <span>Baguette combinado con Pollo y Queso Manchego</span> </p>
+                            <p class="precio">$50</p>
+                        </li>
+                        <li>
+                            <p>Baguette con Tocino<span>Baguette con especias y verduras, además de tocino</span> </p>
+                            <p class="precio">$50</p>
+                        </li>
+                        <li>
+                            <p>Baguette de Jamón<span>Delicioso Baguette con Jamón y Especias</span> </p>
+                            <p class="precio">$65</p>
+                        </li>
+                        <li>
+                            <p>Baguette con Jamón, Queso y Tocino<span>El especial de la casa</span> </p>
+                            <p class="precio">$69</p>
+                        </li>
+                        <li>
+                            <p>Sandwich de Pollo<span>Delicioso sandwich con Pollo y especies</span> </p>
+                            <p class="precio">$65</p>
+                        </li>
+                        <li>
+                            <p>Sandwich de Jamón y queso<span>Queso Amarillo con Jamón y Queso</span> </p>
+                            <p class="precio">$59</p>
+                        </li>
+                    </ul>
+                </section>
+        </div>
+    </section>
+
+    <section class="testimoniales contenedor bg-blanco margin-negativo-10">
+        <h2><span>Lo que dicen nuestros</span> clientes</h2>
+        <div class="testimonial">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed numquam similique magni aliquid exercitationem adipisci aspernatur dignissimos, laboriosam ad sequi est optio illo incidunt rerum quam cupiditate excepturi sapiente quia? Magni! ⭐</p>
+            <p class="autor">- Andrés Sotelo</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenido-footer contenedor bg-blanco">
+            <div class="ubicacion footer-div">
+                <h3>Ubicación</h3>
+                <p>Santa Eulalia 11162</p>
+                <p>La Florida, Santiago</p>
+            </div>
+            <div class="reservacion footer-div">
+                <h3>reservación</h3>
+                <p>Tel. 78254399</p>
+                <a href="tel:+56972348999">Llamar</a>
+            </div>
+            <div class="horario footer-div">
+                <h3>horario</h3>
+                <p>Lun - Jue: 11:00 - 22:00</p>
+                <p>Vie - Sab: 09:00 - 23:30</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+        </div>
+        <p class="copyright">TODOS LOS DERECHOS RESERVADOS ©️</p>
+    </footer>
+</body>
+</html>
